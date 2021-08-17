@@ -12,10 +12,6 @@ bot.on('messageCreate', (msg) => {
 	detect(msg, msg.ban, msg.reply, bot);
 });
 
-bot.on('guildCreate', (guild) => {
-	if (!guild.members.get(bot.user.id).permissions.has(4)) return guild.leave();
-});
-
 bot.on('error', console.error);
 bot.on('ready', () => console.log("Ready to sucking scam victim"));
 
